@@ -26,14 +26,7 @@ namespace LineComparisonProgram
 
             Console.WriteLine("The length of Line1 is : " + lineLenght_1);
             Console.WriteLine("The length of Line2 is : " + lineLenght_2);
-            if (EqualLength(lineLenght_1, lineLenght_2) == true)
-            {
-                Console.WriteLine("Both Lines are equal in Length");
-            }
-            else
-            {
-                Console.WriteLine("Both Lines are Unequal in Length");
-            }
+            Console.WriteLine(Equality(lineLenght_1,lineLenght_2));
         }
         public static int LengthOfLine(int x1, int y1, int x2, int y2)
         {
@@ -43,15 +36,19 @@ namespace LineComparisonProgram
             return lengthOfLine;
 
         }
-        public static Boolean EqualLength(Double l1,Double l2)
+        public static String Equality(Double l1,Double l2)
         {
             if (l1.CompareTo(l2) == 0)
             {
-                return true;
+                return "Both are equal";
+            }
+            else if(l1.CompareTo(l2)<0)
+            {
+                return "Line 1 is smaller than Line 2";
             }
             else
             {
-                return false;
+                return "Line 1 is bigger than Line 2";
             }
         }
     }
