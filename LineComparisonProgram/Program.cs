@@ -7,6 +7,7 @@ namespace LineComparisonProgram
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Line Comparison Program on Master Branch");
             int[] x = new int[2];
             int[] y = new int[2];
             for (int i = 0; i < 2; i++)
