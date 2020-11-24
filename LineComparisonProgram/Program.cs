@@ -3,6 +3,9 @@ using System.Runtime.ConstrainedExecution;
 
 namespace LineComparisonProgram
 {
+    /// <summary>
+    /// Program to compare between two lines based on their length
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -27,7 +30,16 @@ namespace LineComparisonProgram
             Console.WriteLine("The length of Line1 is : " + lineLenght_1);
             Console.WriteLine("The length of Line2 is : " + lineLenght_2);
             Console.WriteLine(Equality(lineLenght_1,lineLenght_2));
+
         }
+        /// <summary>
+        /// Length the of line.
+        /// </summary>
+        /// <param name="x1">The x1.</param>
+        /// <param name="y1">The y1.</param>
+        /// <param name="x2">The x2.</param>
+        /// <param name="y2">The y2.</param>
+        /// <returns></returns>
         public static int LengthOfLine(int x1, int y1, int x2, int y2)
         {
             int lengthOfLine;
@@ -36,6 +48,12 @@ namespace LineComparisonProgram
             return lengthOfLine;
 
         }
+        /// <summary>
+        /// Equalities the specified lines
+        /// </summary>
+        /// <param name="l1">The l1.</param>
+        /// <param name="l2">The l2.</param>
+        /// <returns></returns>
         public static String Equality(Double l1,Double l2)
         {
             if (l1.CompareTo(l2) == 0)
